@@ -1,0 +1,58 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+
+.contribution {
+    &-container {
+        text-align: center;
+
+        .contribution-info {
+            border-bottom: 0.1rem solid @gray-color;
+            .px-to-rem(padding-bottom, 16);
+
+            p {
+                .px-to-rem(font-size, 14);
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+            .total {
+                span {
+                    .px-to-rem(font-size, 20);
+                }
+            }
+
+            .monthly {
+                .px-to-rem(margin-top, 8);
+
+                p::before {
+                    content: '●';
+                    color: @pink-color;
+                    .px-to-rem(font-size, 16);
+                    .px-to-rem(margin-right, 3);
+
+                }
+            }
+
+            .voluntary {
+                .px-to-rem(margin-top, 8);
+
+                p::before {
+                    content: '●';
+                    color: @puple-color;
+                    .px-to-rem(font-size, 16);
+                    .px-to-rem(margin-right, 3);
+                }
+            }
+        }
+
+        .contribution-list{
+            .px-to-rem(margin-top, 16);
+            .px-to-rem(margin-bottom, 16);
+
+
+        }
+
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+
+.contribution-type{
+    .px-to-rem(padding, 16);
+    .px-to-rem(border-radius, 8);
+    border: 0.1rem solid @gray-color;
+
+    header{
+        display: flex;
+        align-items: center;
+        .px-to-rem(height, 24);
+        .px-to-rem(padding-bottom, 8);
+        .px-to-rem(margin-bottom, 8);
+        border-bottom: 0.1rem solid @gray-color;
+
+        img{
+            .px-to-rem(width, 16);
+            .px-to-rem(height, 14);
+        }
+
+        h2{
+         .px-to-rem(font-size, 14);
+        .px-to-rem(margin-left, 8);
+         font-weight: 400;
+        }
+    }
+
+    .contribution-details{
+        display: flex;
+        justify-content: space-between;
+        .px-to-rem(margin-bottom, 8);
+
+        p{
+            .px-to-rem(font-size, 14);
+        }
+        span{
+            font-weight: 600;
+        }
+    }
+
+    .contribution-button{
+        display: flex;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="contribution-type">
+    <header>
+        <img src="../../../assets/img/coins.png" alt="Icone de Moeda">
+        <h2>{{contribution.name}}</h2>
+    </header>
+    <div class="contribution-details" *ngFor="let type of contribution.contributionList; trackBy: trackByFn">
+        <p>{{type.description}}</p>
+        <span *ngIf="type.value">{{type.value | currency: 'BRL'}}</span>
+        <span *ngIf="type.porcentege">{{type.porcentege}}</span>
+    </div>
+   
+    <div class="contribution-button">
+        <button class="btn-primary btn-custom">
+            Alterar contribuição
+        </button>
+    </div>
+</div>

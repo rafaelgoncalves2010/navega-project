@@ -1,1 +1,26 @@
-<p>contribution works!</p>
+<section class="contribution">
+    <div class="contribution-container">
+        <div class="contribution-info">
+            <div class="total">
+                <p>Total em contribuições</p>
+                <span>RS 999.999,99</span>
+            </div>
+            <div class="monthly">
+                <p>Contribuição mensal</p>
+                <span>RS 499.999,99</span>
+            </div>
+            <div class="voluntary">
+                <p>Contribuição voluntária</p>
+                <span>RS 499.999,99</span>
+            </div>
+        </div>
+
+        <div class="contribution-list" *ngFor="let contribution of contributionList; trackBy: trackByFn">
+            <app-contribution-type [contribution]="contribution"></app-contribution-type>
+        </div>
+
+        <button class="btn-primary">
+            Incluir contribuição
+        </button>
+    </div>
+</section>
