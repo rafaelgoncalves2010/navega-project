@@ -1,0 +1,108 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+@import '../../../styles/media.less';
+
+.login-page{
+    .login-container{
+        display: flex;
+        height: 100vh;
+
+        .login-left{
+            flex: 1;
+            .flex-center();
+            flex-direction: column;
+            
+            .login-header{
+                .flex-center();
+
+                img{
+                    width: 100%;
+                    .px-to-rem(max-width, 124)
+                }
+            }
+
+            .wrapper-default{
+                .login-info{
+                    text-align: center;
+
+                    h1,h2{
+                        font-weight: 600;
+                        .px-to-rem(line-height, 20)
+                    }
+
+                    p{
+                        .px-to-rem(margin-top, 10);
+                        .px-to-rem(font-size, 14);
+                        .px-to-rem(line-height, 21);
+                    }
+                }
+
+                .login-form{
+                    .flex-center();
+                    .px-to-rem(margin-top, 32);
+                    flex-direction: column;
+
+                    input{
+                        width: 100%;
+                    }
+
+                    button{
+                        .px-to-rem(margin-top, 133);
+                        .px-to-rem(width, 272);
+                    }
+                }
+            }
+
+            .login-footer{
+                text-align: center;
+                .px-to-rem(margin-top, 16);
+
+                p{
+                    .px-to-rem(font-size, 14);
+                }
+
+                a{
+                    color: @primary-color;
+                    text-decoration: none;
+                    .px-to-rem(font-size, 14);
+                }
+                
+                .version{
+                    .px-to-rem(margin-top, 16);
+                }
+            }
+        }
+
+        .login-right{
+            flex: 2;
+            display: block;
+            background-image: url(../../../assets/img/login-background.png);
+            background-size: cover;
+
+            .mobile({
+                display: none;
+            });
+
+            .tablet({
+                display: none;
+            });
+
+            .navega-layout{
+                .flex-center();
+                align-items: center;
+
+                img{
+                    width: 100%;
+                    .px-to-rem(margin-top, 65);
+                    .px-to-rem(max-width, 1200)
+                };
+            }
+
+            p{
+                color: @white-color;
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+    }
+}

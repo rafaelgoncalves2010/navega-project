@@ -1,0 +1,10 @@
+.px-to-rem(@property, @px) {
+  @remValue: (@px / 16); 
+  @{property}: ~"@{remValue}rem"; 
+}
+
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

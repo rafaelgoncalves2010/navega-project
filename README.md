@@ -1,27 +1,66 @@
 # NavegaProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Olá! 
 
-## Development server
+Esse projeto for criado com Angular na versão 14 e utiliza LESS para estilização foi construído para ser responsivo em versões desktop e mobile. 
+O projeto está configurado com padrões para crescimento futuro. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requisitos
 
-## Code scaffolding
+Antes de começar, você vai precisar ter as seguintes ferramentas instaladas:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Node.js](https://nodejs.org/en/download/) (Versão 14.x ou superior)
+- [NPM](https://www.npmjs.com/get-npm) (Versão 6.x ou superior)
+- [Angular CLI](https://angular.io/cli) (Versão 14.x)
 
-## Build
+## Instalação
+Para instalar, você ira precisar seguir os passos a seguir:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
 
-## Running unit tests
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd nome-do-projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Instale as dependências:
+   ```bash
+   npm install
 
-## Running end-to-end tests
+4. Rode o servidor de desenvolvimento:
+   ```bash
+   npm start
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Abra o navegador e acesse:
+   ```arduino
+   http://localhost:4200
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Rodando os Testes
+Para executar os testes unitários, utilize o comando abaixo:
+
+npm run test
+
+
+## Estrutura do Projeto
+O projeto segue a arquitetura padrão do Angular, com algumas modificações para melhor organização e escalabilidade:
+    
+        src/
+            app/                # Contém os componentes e módulos do projeto
+            assets/             # Arquivos estáticos (imagens, fontes, etc.)
+            environments/       # Configurações de ambiente
+            styles/             # Arquivos LESS e SCSS para estilização
+            util/               # Configurações utilizadas dentro do projeto
+
+
+## :rocket: TECNOLOGIAS
+Tecnologias utilizadas:
+- **Angular 14+** 
+- **Typescript** 
+- **Angular Material**
+
+
+
+
+

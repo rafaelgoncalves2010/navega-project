@@ -1,0 +1,56 @@
+<section class="login-page">
+  <div class="login-container">
+
+    <aside class="login-left">
+      
+      <header class="login-header">
+        <img src="../../../assets/img/navega-logo.png" alt="Logo da Empresa" class="logo" />
+      </header>
+
+      <div class="wrapper-default">
+        <div class="login-info">
+          <h1>Boas Vindas ao Portal!</h1>
+          <h2>Para começar, qual seu email ou CPF?</h2>
+  
+          <p>Precisamos desta confirmação para dar início ao seu acesso.</p>
+        </div>
+  
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+  
+          <mat-form-field appearance="legacy" class="form-group">
+            <mat-label>Email ou CPF</mat-label>
+            <input matInput formControlName="username" placeholder="Digite seu email ou CPF"/>
+            <mat-error *ngIf="loginForm.get('username')?.invalid">
+              {{ getErrorMessage('username') }}
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="legacy" class="form-group">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" formControlName="password" placeholder="Digite sua senha"/>
+            <mat-error *ngIf="loginForm.get('password')?.invalid">
+              {{ getErrorMessage('password') }}
+            </mat-error>
+          </mat-form-field>
+  
+          <button type="submit" class="btn-primary">
+            ACESSAR
+          </button>
+        </form>
+      </div>
+     
+      <footer class="login-footer">
+        <p>Esqueceu a senha? <a href="#">Acesse aqui</a></p>
+        <p class="version">Versão 0.01</p>
+      </footer>
+    </aside> 
+
+    <aside class="login-right">
+      <div class="navega-layout">
+        <img src="../../../assets/img/navega-layout.png" alt="Navega Layout">
+      </div>
+      
+      <p>Bem-vindo a seu novo Dashboard</p>
+    </aside>
+  </div>
+</section>
