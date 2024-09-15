@@ -1,0 +1,28 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+
+header{
+    width: 100%;
+    background-color: @header;
+    .px-to-rem(height, 80);
+    .main-wrapper{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .px-to-rem(height, 80);
+
+        .profile-picture{
+            img{
+                .px-to-rem(width, 32);
+            }
+        }
+
+        .icons{
+            .px-to-rem(width, 112);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+   
+}

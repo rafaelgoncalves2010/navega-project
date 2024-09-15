@@ -1,0 +1,19 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+
+.sidebar{
+    .px-to-rem(width, 336);
+
+    .menu{
+        cursor: pointer;
+        list-style: none;
+        .px-to-rem(padding-top, 16);
+        .px-to-rem(padding-bottom, 16);
+        border-bottom: 0.1rem solid @gray-color;
+
+        &:first-child{
+            .px-to-rem(padding-top, 0);
+            .px-to-rem(padding-bottom, 16);
+        }
+    }
+}

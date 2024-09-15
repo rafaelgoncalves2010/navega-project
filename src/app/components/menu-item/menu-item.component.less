@@ -1,0 +1,45 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+
+
+.menu-item{
+    .px-to-rem(height, 32);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    .menu-title{
+        display: flex;
+        align-items: center;
+
+        .svg-container{
+            .px-to-rem(width, 32);
+            display: flex;
+            justify-content: center;
+
+            svg{
+                width: 100%;
+                fill: @second-color;
+            }
+        }
+
+        span{
+            .px-to-rem(margin-left, 7);
+        }
+    }
+
+    svg{
+        fill: @second-color;
+    }
+    
+    &:hover{
+       color: @primary-color;
+
+       svg{
+            fill: @primary-color!important;
+        }
+    }
+}
+
+

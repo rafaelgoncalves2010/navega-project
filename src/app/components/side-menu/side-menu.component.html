@@ -1,0 +1,7 @@
+<nav class="sidebar">
+    <ul>
+        <li class="menu" *ngFor="let menuItem of menu">
+           <app-menu-item [menuItem]="menuItem"></app-menu-item>
+        </li>
+    </ul>
+</nav>
