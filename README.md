@@ -19,7 +19,7 @@ Para instalar, você ira precisar seguir os passos a seguir:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/rafaelgoncalves2010/navega-project.git
 
 2. Navegue até o diretório do projeto:
    ```bash
@@ -35,7 +35,7 @@ Para instalar, você ira precisar seguir os passos a seguir:
 
 5. Abra o navegador e acesse:
    ```arduino
-   http://localhost:4200
+   http://localhost:4200/navega-project
 
 
 ## Rodando os Testes
