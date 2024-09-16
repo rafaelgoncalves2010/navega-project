@@ -3,6 +3,8 @@
 
 
 .menu-item{
+    text-decoration: none;
+    color: @second-color;
     .px-to-rem(height, 32);
     display: flex;
     align-items: center;
@@ -39,6 +41,14 @@
        svg{
             fill: @primary-color!important;
         }
+    }
+
+    &.active-route{
+        color: @primary-color;
+
+        svg{
+             fill: @primary-color!important;
+         } 
     }
 }
 

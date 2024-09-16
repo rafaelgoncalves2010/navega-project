@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { NgIf } from '@angular/common';
 import { FormValidationService } from 'src/app/util/FormValidation.service';
+import { Router, RouterModule } from '@angular/router';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { FormValidationService } from 'src/app/util/FormValidation.service';
   standalone: true,
   imports: [
     FormsModule,
+    RouterModule,
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
@@ -24,7 +26,8 @@ export class LoginComponent implements OnInit{
   loginForm!: FormGroup;
 
   constructor(private fb: FormBuilder,
-              public formValidationService : FormValidationService
+              public formValidationService : FormValidationService,
+              private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -42,11 +45,11 @@ export class LoginComponent implements OnInit{
     if (this.loginForm.valid) {
       const { username, password } = this.loginForm.value;
 
-      const validUsername = 'user@domain.com';
-      const validPassword = '123456';
+      const validUsername = 'navega@navega.com';
+      const validPassword = 'navega';
 
       if ((username === validUsername || username === '123.456.789-00') && password === validPassword) {
-        alert('Login bem-sucedido!');
+        this.router.navigate(['/my-plan'])
       } else {
         alert('Usuário ou senha inválidos.');
       }

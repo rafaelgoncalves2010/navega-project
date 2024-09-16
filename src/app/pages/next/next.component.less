@@ -1,0 +1,15 @@
+@import '../../../styles/mixins.less';
+@import '../../../styles/variables.less';
+
+:host{
+    .flex-center();
+    align-items: center;
+    height: 100%;
+    h1,p {
+        text-align: center;
+        font-weight: 600;
+        .px-to-rem(font-size, 60);
+        .px-to-rem(line-height, 60);
+        color: @primary-color;
+    }
+}

@@ -1,5 +1,6 @@
-<!-- <a [routerLink]=menuItem.route class="menu-item"> -->
-<a class="menu-item">
+<a [routerLink]=menuItem.route
+    [ngClass]="{'active-route': menuItem.route.endsWith('/contribution') && currentRoute()}" class="menu-item">
+
     <div class="menu-title">
         <div class="svg-container">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
