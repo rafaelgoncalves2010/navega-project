@@ -2,9 +2,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormControl, FormGroupDirective, NgForm, FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { ErrorStateMatcher } from '@angular/material/core';
 import { NgIf } from '@angular/common';
-import { FormValidationService } from 'src/app/util/FormValidation.service';
+import { FormValidationService } from 'src/app/util/form-validation.service';
 import { Router, RouterModule } from '@angular/router';
 
 
@@ -49,7 +48,7 @@ export class LoginComponent implements OnInit{
       const validPassword = 'navega';
 
       if ((username === validUsername || username === '123.456.789-00') && password === validPassword) {
-        this.router.navigate(['/my-plan'])
+        this.router.navigate(['/my-plan/contribution'])
       } else {
         alert('Usuário ou senha inválidos.');
       }
