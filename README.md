@@ -2,8 +2,8 @@
 
 Olá! 
 
-Esse projeto for criado com Angular na versão 14 e utiliza LESS para estilização. 
-Foi construído para ser responsivo em versões desktop e mobile. 
+Esse projeto for criado com Angular na versão 14 e utiliza LESS para estilização. <br> 
+Foi construído para ser responsivo em versões desktop e mobile. <br>
 O projeto está configurado com padrões para crescimento futuro. 
 
 ## Requisitos
