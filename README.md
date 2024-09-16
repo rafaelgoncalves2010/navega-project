@@ -2,14 +2,15 @@
 
 Olá! 
 
-Esse projeto for criado com Angular na versão 14 e utiliza LESS para estilização foi construído para ser responsivo em versões desktop e mobile. 
+Esse projeto for criado com Angular na versão 14 e utiliza LESS para estilização. 
+Foi construído para ser responsivo em versões desktop e mobile. 
 O projeto está configurado com padrões para crescimento futuro. 
 
 ## Requisitos
 
 Antes de começar, você vai precisar ter as seguintes ferramentas instaladas:
 
-- [Node.js](https://nodejs.org/en/download/) (Versão 14.x ou superior)
+- [Node.js](https://nodejs.org/en/download/) (Versão 16.14.0 eu gosto de instalar pelo NVM)
 - [NPM](https://www.npmjs.com/get-npm) (Versão 6.x ou superior)
 - [Angular CLI](https://angular.io/cli) (Versão 14.x)
 
@@ -40,7 +41,7 @@ Para instalar, você ira precisar seguir os passos a seguir:
 ## Rodando os Testes
 Para executar os testes unitários, utilize o comando abaixo:
 
-npm run test
+ng test
 
 
 ## Estrutura do Projeto
@@ -59,6 +60,7 @@ Tecnologias utilizadas:
 - **Angular 14+** 
 - **Typescript** 
 - **Angular Material**
+- **Jest**
 
 
 
