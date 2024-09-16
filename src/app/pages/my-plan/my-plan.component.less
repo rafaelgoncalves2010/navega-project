@@ -1,5 +1,6 @@
 @import '../../../styles/mixins.less';
 @import '../../../styles/variables.less';
+@import '../../../styles/media.less';
 
 .my-plan{
     header{
@@ -17,8 +18,18 @@
             text-transform: uppercase;
             .px-to-rem(margin-left, 8);
             .px-to-rem(font-size, 14);
-        }  
+        } 
+
+        .mobile({
+            .px-to-rem(padding-left, 24);
+        });
+
+        .tablet({
+            .px-to-rem(padding-left, 24);
+        });
+        
     }
+    
     .aside-plan{
         display: flex;
 
@@ -48,12 +59,33 @@
                     .px-to-rem(font-size, 14);
                 }
             }
+
+            .mobile({
+                display: none;
+            });
+
+            .tablet({
+                display: none;
+            });
         }
 
         .my-plan-right{
             flex:2;
             .px-to-rem(margin-top, 16);
             .px-to-rem(margin-left, 16);
+
+            .mobile({
+                .px-to-rem(margin-left, 0);
+                .px-to-rem(padding-left, 24);
+                .px-to-rem(padding-right, 24);
+
+            });
+
+            .tablet({
+                .px-to-rem(margin-left, 0);
+                .px-to-rem(padding-left, 24);
+                .px-to-rem(padding-right, 24);
+            });
         }
     }
 }

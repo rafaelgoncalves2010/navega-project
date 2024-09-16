@@ -5,6 +5,13 @@
                 <p>Total em contribuições</p>
                 <span>RS 999.999,99</span>
             </div>
+
+            <app-contribution-graphic 
+                [labels]="getLabelData()" 
+                [data]="getValuesData()" 
+                [backgroundColor]="['#594CBE', '#E22E6F']">
+            </app-contribution-graphic>
+
             <div class="monthly">
                 <p>Contribuição mensal</p>
                 <span>RS 499.999,99</span>

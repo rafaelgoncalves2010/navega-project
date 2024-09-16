@@ -1,5 +1,6 @@
 @import '../../../styles/mixins.less';
 @import '../../../styles/variables.less';
+@import '../../../styles/media.less';
 
 header{
     width: 100%;
@@ -24,5 +25,12 @@ header{
             align-items: center;
         }
     }
+    .mobile({
+        display: none;
+    });
+
+    .tablet({
+        display: none;
+    });
    
 }
